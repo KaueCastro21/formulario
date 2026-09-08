@@ -1,11 +1,13 @@
+@import url(droparea.css);
+
 input, textarea, select{
    appearance: none;
    width: 100%;
    border-radius: .5rem;
-    border: 1px solid var(--stroke-default);
+   border: 1px solid var(--stroke-default);
     
-    padding: .75rem 1rem;
-    font: var(--text);
+   padding: .75rem 1rem;
+   font: var(--text);
 } 
 
 label{
@@ -18,7 +20,8 @@ label{
 
 input:focus,
 textarea:focus,
-select:focus{
+select:focus,
+input[type="date"]:focus-within {
     outline: .25rem solid var(--surface-secondary);
     border: .125rem solid var(--stroke-highlight);
     outline-offset: 1px;
@@ -32,7 +35,7 @@ input[type="date"] {
    }
 
    &::before{
-      content: '';
+      content: "";
       position: absolute;
       background: url(../../assets/calendar-03.svg)center/contain;
       right: 1rem;
