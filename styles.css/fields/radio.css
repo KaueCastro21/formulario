@@ -29,7 +29,7 @@ label + .radio-wrapper {
     }
 
  .radio-image {
-    background-image: url(../..assets/icons/radio-default.svg);
+    background-image: url(./assets/icons/radio-default.svg);
 
     width: 1.5rem;
     height: 1.5rem;
